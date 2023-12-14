@@ -1,15 +1,14 @@
 import Header from 'components/header'
-import Hero from 'components/hero'
 import Footer from 'components/footer'
-const Home = () => {
+
+export default function Layout ({ children }) {
   return (
     <>
       <Header />
-      <main>
-        <Hero />
-      </main>
+
+      <main>{children}</main>
+
       <Footer />
     </>
   )
 }
-export default Home
