@@ -1,3 +1,4 @@
+import Meta from 'components/meta'
 import PostBody from 'components/post-body'
 import Container from 'components/container'
 import Hero from 'components/hero'
@@ -13,6 +14,13 @@ import eyecatch from 'images/about.jpg'
 const About = () => {
   return (
     <Container>
+      <Meta
+        pageTitle='アバウト'
+        pageDesc='About development activities'
+        pageImg={eyecatch.src}
+        pageImgW={eyecatch.width}
+        pageOmgH={eyecatch.height}
+      />
       <Hero title='About' subtitle='Aboutdevelopment activities' />
       <figure>
         <Image

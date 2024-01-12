@@ -1,11 +1,13 @@
+import Meta from 'components/meta'
 import Container from 'components/container'
 import Hero from 'components/hero'
 
-const Blog = () => {
+const Cube = () => {
   return (
     <Container>
-      <Hero title='Blog' subtitle='Recent Posts' />
+      <Meta />
+      <Hero title='CUBE' subtitle='アウトプットしていくサイト' imageOn />
     </Container>
   )
 }
-export default Blog
+export default Cube
