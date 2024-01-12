@@ -2,12 +2,12 @@ import Meta from 'components/meta'
 import Container from 'components/container'
 import Hero from 'components/hero'
 
-const Cube = () => {
+export default function Blog ({ posts }) {
   return (
     <Container>
-      <Meta />
-      <Hero title='CUBE' subtitle='アウトプットしていくサイト' imageOn />
+      <Meta pageTitle='ブログ' pageDesc='ブログの記事一覧' />
+
+      <Hero title='Blog' subtitle='Recent Posts' />
     </Container>
   )
 }
-export default Cube
