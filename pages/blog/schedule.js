@@ -1,5 +1,6 @@
 import { getPostBySlug } from 'lib/api'
 import Container from 'components/container'
+import PostCategories from 'components/post-categories'
 import PostHeader from 'components/post-header'
 import PostBody from 'components/post-body'
 import {
@@ -40,7 +41,9 @@ export default function Schedule ({
               <ConvertBody contentHTML={content} />
             </PostBody>
           </TwoColumnMain>
-          <TwoColumnSidebar> </TwoColumnSidebar>
+          <TwoColumnSidebar>
+            <PostCategories categories={categories} />
+          </TwoColumnSidebar>
         </TwoColumn>
       </article>
     </Container>
