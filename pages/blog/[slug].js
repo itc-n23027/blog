@@ -66,8 +66,15 @@ const Schedule = ({
   )
 }
 
-const getStaticProps = async () => {
-  const slug = 'micro'
+const getStaticPaths = async () => {
+  return {
+    paths: ['/blog/schedule', '/blog/music', '/blog/micro'],
+    fallback: true
+  }
+}
+
+const getStaticProps = async context => {
+  const slug = context.params.slug
 
   const post = await getPostBySlug(slug)
 
@@ -92,3 +99,4 @@ const getStaticProps = async () => {
 }
 export default Schedule
 export { getStaticProps }
+export { getStaticPaths }
